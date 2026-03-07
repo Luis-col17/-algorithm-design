@@ -1,0 +1,1 @@
+This repository contains the code I learn from algorithm designs I've created, and the code is written in Python.
