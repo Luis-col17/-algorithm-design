@@ -41,10 +41,10 @@ def seleccion_de_busqueda(PAISES, BUSQUEDA, tipo_busqueda):
     else: 
         print("seleccione la opcion correcta")    
         
+paises = obtener_paises()
 Exit = False
 while Exit == False:
-    paises = obtener_paises()
-    name_country = input("Ingrese el nombre del pais en ingles: ")
+    name_country = input("Ingrese el nombre del pais en ingles: ").lower()
     Selection = int(input("Seleccione el tipo de busqueda: \n1.Lineal \n2.Binaria \n: "))
     print("Nombre del pais", name_country ,"con siguiente link: ",seleccion_de_busqueda(paises, name_country, Selection))
     padlock = input("Desea salir? (s/n): ").lower()
